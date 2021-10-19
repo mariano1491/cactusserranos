@@ -1,0 +1,514 @@
+@import "./parciales/variables";
+@import "./parciales/tipografia";
+
+.headerFondo {
+    background-image: url("../imagen/cactus2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+}
+
+
+/*nav*/
+
+
+.navegacion {
+    list-style: none;
+    background: rgb(26, 20, 128);
+    background: -moz-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    background: -webkit-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    background: radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1480", endColorstr="#00ff44", GradientType=1);
+
+}
+
+.logoDeLaPagina {
+    margin: 20px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+li a:hover {
+    background-color: #22252781;
+}
+
+.activador:hover .sub-lista {
+    display: block;
+}
+
+ul>li {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-lista {
+    position: absolute;
+    background: rgb(26, 20, 128);
+    background: -moz-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    background: -webkit-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    background: radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1480", endColorstr="#00ff44", GradientType=1);
+    display: none;
+    width: 130%;
+}
+
+
+li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #0e0303;
+    display: flex;
+    padding: 0 16px;
+
+}
+
+/*Titulos*/
+.h1Index {
+    color: $verde;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    text-shadow: rgb(7, 104, 20) 0.1em 0.1em 0.2em;
+    @include font-size(2rem, 3rem)
+}
+
+.h1Secciones {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $verdeAgua;
+    text-shadow: rgb(7, 104, 20) 0.1em 0.1em 0.2em;
+    padding: 1rem;
+}
+
+
+h5 {
+    font-weight: bold;
+}
+
+/*Parrafos*/
+p {
+    color: rgb(33, 71, 11);
+    line-height: 1.2;
+    word-spacing: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*grid*/
+
+.gridMain {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+        "main1"
+        "main2"
+        "main3"
+        "main4"
+        "main5"
+
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+.main2 {
+    grid-area: main2;
+}
+
+.main3 {
+    grid-area: main3;
+}
+
+.main4 {
+    grid-area: main4;
+}
+
+.main5 {
+    grid-area: main5;
+}
+
+/*.main5 {
+    margin: auto;
+}*/
+
+/*Caja*/
+
+.caja2Index {
+    align-items: center;
+    justify-content: center;
+    justify-items: stretch;
+    display: flex;
+    font-weight: bold;
+    color: $blanco;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    &__p {
+        @include font-size(2rem, 1rem)
+    }
+
+
+
+    &__h2 {
+        padding: 0.5rem;
+        background: radial-gradient(circle, rgb(92, 48, 6) 0%, rgb(141, 117, 10) 35%, #4d4503 100%);
+        margin: 0 auto;
+        border-radius: 1rem;
+        border: 2px solid black;
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        animation: bounce;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+.texto1Index {
+    font-weight: bold;
+
+    &__h3 {
+        color: $verde;
+        margin: 1rem;
+        padding: 1rem;
+        text-decoration: underline;
+
+    }
+
+    &__p {
+        letter-spacing: 1px;
+        @include font-size(1.5rem, 1.2rem)
+    }
+}
+
+.texto2Index {
+    font-weight: bold;
+
+    &__h3 {
+        color: $verde;
+        margin: 1rem;
+        padding: 1rem;
+        text-decoration: underline;
+
+    }
+
+    &__p {
+        letter-spacing: 1px;
+        @include font-size(1.5rem, 1.2rem)
+    }
+}
+
+/*cajas del index */
+
+
+
+
+
+
+.divCajas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: row;
+
+
+
+    .cajaIndex1 {
+
+        .cajas:hover {
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        &__fieldset {
+            padding: 25px 10px 25px 10px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            background: rgb(207, 214, 214);
+            background: linear-gradient(90deg, rgba(207, 214, 214, 1) 0%, rgba(196, 237, 159, 1) 35%, rgba(200, 218, 92, 1) 100%);
+        }
+
+        &__legend {
+            border: 1px solid black;
+
+        }
+
+        &__h3 {
+            color: $verde;
+            margin: 1rem;
+            padding: 1rem;
+            text-decoration: underline;
+        }
+
+        &__p {
+            font-size: 1rem;
+            @include font-size(1.5rem, 1.2rem)
+        }
+
+
+    }
+}
+
+
+/* imagenes */
+.imagenInicio {
+    width: 100%;
+
+}
+
+.imagen {
+    height: 250px;
+    width: 250px;
+}
+
+.alturaSlider {
+    height: 60vh;
+    object-fit: cover;
+
+
+}
+
+.marginSlider {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+
+/*Macetas*/
+
+.h2Macetas {
+    color: #a4a70b;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+
+
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*fieldset*/
+
+fieldset span {
+    color: #0b1301;
+}
+
+fieldset {
+    margin: 20px 10px;
+    padding: 20px 10px;
+}
+
+
+/*footer*/
+
+
+
+.footer {
+    background: radial-gradient(circle, rgb(168, 152, 5) 0%, rgb(126, 35, 8) 35%, rgb(165, 6, 6) 100%);
+    padding: 1rem;
+    border-top: 1px solid black;
+
+    &__h4 {
+        color: $blanco;
+        text-align: center;
+    }
+}
+
+.relleno {
+    height: 10vh;
+}
+
+/*formulario*/
+
+.formulario {
+    text-align: center;
+    line-height: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    font-weight: bold;
+
+
+    &__fieldset {
+        background: rgb(207, 214, 214);
+        background: linear-gradient(90deg, rgba(207, 214, 214, 1) 0%, rgba(196, 237, 159, 1) 35%, rgba(200, 218, 92, 1) 100%);
+    }
+}
+
+
+
+
+
+.boton {
+    background-color: rgb(29, 54, 4);
+    color: white;
+}
+
+.margenImg {
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+
+    &__fieldset {
+        background: rgb(207, 214, 214);
+        background: linear-gradient(90deg, rgba(207, 214, 214, 1) 0%, rgba(196, 237, 159, 1) 35%, rgba(200, 218, 92, 1) 100%);
+        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &__legend {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__h6 {
+        color: #406708;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+    }
+
+    &__img {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 10px;
+        object-fit: cover;
+        height: 250px;
+        width: 250px;
+        padding: 0.625rem;
+        transition: all 0.3s ease-out;
+    }
+
+    &__img:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    &__h4 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__bottonCarrito {
+        background-color: rgba(255, 166, 0, 0.541);
+        border: 1px solid black;
+        border-radius: 1px;
+        box-shadow: black;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1rem;
+        height: 3rem;
+        width: 50%;
+        margin-left: 4.4rem;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-bottom: 1rem;
+
+    }
+
+    &__botonCarrito:hover {
+        background: chocolate;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .divCajas {
+        flex-direction: column;
+    }
+
+    .h1Index {
+        font-size: 2rem;
+    }
+
+    .linksDeCabecera {
+        text-align: center;
+    }
+
+    .h2Index {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .parrafoIndex {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    .parrafoIndex {
+        font-size: 1.5rem;
+    }
+
+    ul li a {
+        font-size: 1.5rem;
+    }
+
+    .h2Index {
+        font-size: 2rem;
+    }
+
+    .parrafoPrincipal {
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+}

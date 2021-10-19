@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description"
+        content="Dejanos tu mensaje para que podamos ponernos en contacto contigo y responder tu consulta">
+    <meta name="keywords" content="MENSAJE, CONTACTO, FORMULARIO, DATOS PERSONALES, CONSULTA, PREGUNTA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos/main.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class=" animate__animated animate__fadeInDown navbar p-0 navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid headerFondo">
+                <a class="navbar-brand" href="index.html"> <img class="img-fluid" src="./imagen/logo3.jpg"
+                        alt="cactusSerranos" class="logoDeLaPagina animate__animated animate__fadeInDown"></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegacion" id="navbarNav">
+                    <ul class="navbar-nav align-items-center" class="linksDeCabecera">
+                        <li class="nav-item"> <a href="cactus.html">Cactus</a></li>
+                        <li class="nav-item"> <a href="suculentas.html">Suculentas</a></li>
+                        <li class="nav-item activador"> <a href="macetas.html">Macetas</a>
+                            <ul class="sub-lista">
+                                <li class="nav-item"><a href="macetas/platisco.html">De Plastico</a></li>
+                                <li class="nav-item"><a href="macetas/barro.html">De Barro</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="piedras.html">Piedras Decorativas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="h1Secciones">Contacto</h1>
+        </section>
+        <section class="formulario">
+            <form action="" method="GET">
+                <fieldset class="formulario__fieldset">
+                    <legend>Informacion Personal</legend>
+                    <div>
+                        <label for="infoNombre">Nombre</label>
+                        <input type="text" name="infoNombre" id="infoNombre" placeholder="Introduzca aqui Su Nombre"
+                            required>
+                    </div>
+                    <div>
+                        <label for="infoApellido">Apellido</label>
+                        <input type="text" name="infoApellido" id="infoApellido"
+                            placeholder="introduzca aqui su apellido" required>
+                    </div>
+                    <div>
+                        <label for="infoSexo">Sexo:</label>
+                        <input type="radio" name="infoSexo" id="infoSexo" value="masculino">masculino
+                        <input type="radio" name="infoSexo" id="infoSexo" value="femenino">femenino
+                    </div>
+                    <div>
+                        <label for="infoTelefono">Telefono</label>
+                        <input type="tel" name="infoTelefono" id="infoTelefono"
+                            placeholder="Introduzca aqui su numero de telefono ">
+                    </div>
+                    <label for="infoMail">Correo Electronico</label>
+                    <input type="email" name="infoMail" id="infoMail" placeholder="introduzca Su Mail" required>
+                    </div>
+                    <div>
+                        <label for="infoCivil">Estado Civil</label>
+                        <select name="infoCivil" id="infoCivil">
+                            <option value="Casado" disable selected>seleccione</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Viudo">Viudo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="infoComentarios" id="infoComentarios" cols="30" rows="10"
+                            maxlength="200">Comentarios</textarea>
+                    </div>
+                    <div>
+                        <label for="infoLegal">Acepta Terminos y Condiciones</label>
+                        <input type="checkbox" name="infoLegal" id="infoLegal" value="1" required>
+                    </div>
+                    <div>
+
+                        <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            enviar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">¿Esta seguro que desea enviar el
+                                            formulario?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Importante
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="reset" value="Limpiar" class="boton">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h4 class="footer__h4">© 2021 Cactus Serranos. Todos Los Derechos Reservados. </h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
