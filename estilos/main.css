@@ -294,19 +294,36 @@ fieldset {
 
 /*formulario*/
 .formulario {
-  text-align: center;
   line-height: 2rem;
-  display: grid;
-  grid-template-rows: 1fr;
+  font-weight: bold;
   justify-content: center;
-  font-weight: bold; }
+  display: flex; }
   .formulario__fieldset {
-    background: #cfd6d6;
-    background: linear-gradient(90deg, #cfd6d6 0%, #c4ed9f 35%, #c8da5c 100%); }
+    background-image: url("../imagen/cactusformulario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border: 1px solid black; }
+
+.btn-primary {
+  background-color: #60a511;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #60a511;
+  border-image: initial; }
 
 .boton {
-  background-color: #1d3604;
-  color: white; }
+  background-color: #60a511;
+  color: white;
+  margin-top: 1rem;
+  width: 69px;
+  border-radius: 0.25rem;
+  border-color: #60a511;
+  height: 40px;
+  padding-bottom: 5px; }
+
+.boton:hover {
+  background-color: #0d6efd; }
 
 .margenImg {
   padding-top: 1rem;
@@ -344,10 +361,8 @@ fieldset {
     font-weight: bold;
     font-size: 1.5rem; }
   .margenImg__bottonCarrito {
-    background-color: rgba(255, 166, 0, 0.541);
-    border: 1px solid black;
+    background-color: rgba(96, 165, 17, 0.541);
     border-radius: 1px;
-    box-shadow: black;
     justify-content: center;
     font-weight: bold;
     font-size: 1rem;
@@ -357,7 +372,8 @@ fieldset {
     align-items: center;
     text-align: center;
     display: flex;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3); }
   .margenImg__botonCarrito :hover {
     background-color: black; }
 
