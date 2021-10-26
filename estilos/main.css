@@ -269,12 +269,32 @@ fieldset {
 
 /*footer*/
 .footer {
-  background: radial-gradient(circle, #a89805 0%, #7e2308 35%, #a50606 100%);
+  background: #0b1201;
+  background: -moz-linear-gradient(0deg, #0b1201 0%, #263807 50%, #365b0c 100%);
+  background: -webkit-linear-gradient(0deg, #0b1201 0%, #263807 50%, #365b0c 100%);
+  background: linear-gradient(0deg, #0b1201 0%, #263807 50%, #365b0c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1201",endColorstr="#365b0c",GradientType=1);
   padding: 1rem;
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  text-align: center; }
   .footer__h4 {
     color: white;
-    text-align: center; }
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  .footer__a {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.4rem; }
+  .footer__h5 {
+    color: white;
+    font-size: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid white; }
 
 .relleno {
   height: 10vh; }

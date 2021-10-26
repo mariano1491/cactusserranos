@@ -332,14 +332,40 @@ fieldset {
 
 
 .footer {
-    background: radial-gradient(circle, rgb(168, 152, 5) 0%, rgb(126, 35, 8) 35%, rgb(165, 6, 6) 100%);
+    background: rgb(11,18,1);
+background: -moz-linear-gradient(0deg, rgba(11,18,1,1) 0%, rgba(38,56,7,1) 50%, rgba(54,91,12,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(11,18,1,1) 0%, rgba(38,56,7,1) 50%, rgba(54,91,12,1) 100%);
+background: linear-gradient(0deg, rgba(11,18,1,1) 0%, rgba(38,56,7,1) 50%, rgba(54,91,12,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1201",endColorstr="#365b0c",GradientType=1);
     padding: 1rem;
     border-top: 1px solid black;
+    text-align: center;
 
     &__h4 {
         color: $blanco;
+        margin-bottom: 1rem;
         text-align: center;
+        font-weight: bold;
+        
     }
+    &__a {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        color: $blanco;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        
+    }
+    &__h5 {
+        color: $blanco;
+        font-size: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid white;
+        
+    }
+    
 }
 
 .relleno {
