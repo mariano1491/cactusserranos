@@ -20,7 +20,6 @@ main {
   flex-direction: column;
   background-position: center; }
 
-/*nav*/
 .navegacion {
   list-style: none;
   background: #1a1480;
@@ -34,6 +33,13 @@ main {
   border: 1px solid black;
   border-radius: 5px; }
 
+main {
+  background: #bdf0ad;
+  background: linear-gradient(0deg, #bdf0ad 0%, #ffe2a4 100%); }
+
+body {
+  font-family: 'Nunito', sans-serif; }
+
 li a:hover {
   background-color: #22252781; }
 
@@ -43,16 +49,6 @@ li a:hover {
 ul > li {
   position: relative;
   display: inline-block; }
-
-.sub-lista {
-  position: absolute;
-  background: #1a1480;
-  background: -moz-radial-gradient(circle, #1a1480 0%, #0d8b0b 35%, rgba(0, 255, 68, 0.599877) 100%);
-  background: -webkit-radial-gradient(circle, #1a1480 0%, #0d8b0b 35%, rgba(0, 255, 68, 0.599877) 100%);
-  background: radial-gradient(circle, #1a1480 0%, #0d8b0b 35%, rgba(0, 255, 68, 0.599877) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1480", endColorstr="#00ff44", GradientType=1);
-  display: none;
-  width: 130%; }
 
 li a {
   color: #ffffff;
@@ -382,6 +378,8 @@ fieldset {
     flex-direction: column; }
   .h1Index {
     font-size: 2rem; }
+  .caja2Index__p {
+    font-size: 0rem; }
   .linksDeCabecera {
     text-align: center; }
   .h2Index {

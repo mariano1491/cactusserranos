@@ -1,36 +1,12 @@
 @import "./parciales/variables";
 @import "./parciales/tipografia";
-
-.headerFondo {
-    background-image: url("../imagen/cactus2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-position: center;
-}
+@import "./parciales/header";
+@import "./parciales/main";
+@import "./parciales/body";
 
 
-/*nav*/
 
 
-.navegacion {
-    list-style: none;
-    background: rgb(26, 20, 128);
-    background: -moz-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    background: -webkit-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    background: radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1480", endColorstr="#00ff44", GradientType=1);
-
-}
-
-.logoDeLaPagina {
-    margin: 20px 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
 
 
 li a:hover {
@@ -46,16 +22,7 @@ ul>li {
     display: inline-block;
 }
 
-.sub-lista {
-    position: absolute;
-    background: rgb(26, 20, 128);
-    background: -moz-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    background: -webkit-radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    background: radial-gradient(circle, rgba(26, 20, 128, 1) 0%, rgba(13, 139, 11, 1) 35%, rgba(0, 255, 68, 0.5998774509803921) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1480", endColorstr="#00ff44", GradientType=1);
-    display: none;
-    width: 130%;
-}
+
 
 
 li a {
@@ -493,14 +460,7 @@ fieldset {
 
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 767px) {
-
 
     .divCajas {
         flex-direction: column;
@@ -508,6 +468,9 @@ fieldset {
 
     .h1Index {
         font-size: 2rem;
+    }
+    .caja2Index__p {
+        font-size: 0rem;
     }
 
     .linksDeCabecera {

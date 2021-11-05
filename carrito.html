@@ -24,8 +24,8 @@
 
         <nav class=" animate__animated animate__fadeInDown navbar p-0 navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid headerFondo">
-                <a class="navbar-brand" href="index.html"> <img class="img-fluid" src="./imagen/logo3.jpg"
-                        alt="cactusSerranos" class="logoDeLaPagina animate__animated animate__fadeInDown"></a>
+                <a class="navbar-brand" href="index.html"> <img class="img-fluid logoDeLaPagina animate__animated animate__fadeInDown" src="./imagen/logo3.jpg"
+                        alt="cactusSerranos"></a>
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,10 +51,46 @@
         </nav>
     </header>
     <main>
-        <h1 class="h1Secciones">Carrito</h1>
+        <h2> Tus Compras</h2>
+        <!-- inicio fieldset -->
+        <fieldset class="margen textoRelativo">
+            <legend>Medios de Pago</legend>
+            <div>Efectivo</div>
+            <input type="radio" name="genero" value="efectivo">
+            <div>Tarjetas de Credito</div>
+            <input type="radio" name="genero" value="Tarjeta de credito">
+            <div>Tarjeta de debito</div>
+            <input type="radio" name="genero" value="Tarjeta de debito"> <br>
 
-        <h3>Gracias por realizar su compra</h3>
-    </main>
+            <legend class="margen">Tarjetas</legend>
+            <select name="tarjetas">
+                <option value="VISA">VISA</option>
+                <option value="MASTERCARD">MASTERCARD</option>
+                <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                <option value="BANCO PROVINCIA">BANCO PROVINCIA</option>
+                <option value="BANCO NACION">BANCO NACION</option>
+                <option value="NARANJA">NARANJA</option>
+            </select>
+        </fieldset>
+        <fieldset class="margen textoRelativo">
+            <legend>Retiro Por</legend>
+            <div>OCA Estándar - Retiro por sucursal de OCA</div>
+            <input type="radio" name="genero" value="correo Oca">
+            <div>SHOWROOM Cactus Serranos Olavarria </div>
+            <input type="radio" name="genero" value="showroom">
+        </fieldset>
+
+
+
+        <!-- fin fieldset -->
+        <!-- inicio checkbox -->
+        <div class="margen padding">Acepta terminos y condiciones</div>
+        <input class="margen" type="checkbox" name="Acepta" value="1"> <br>
+        <br>
+        <input class="margen botonCompras" type="submit" value="finalizar compra" />
+        <!-- fin chexbox -->
+        
+    </main> <!-- fin main -->
 
     <footer class="footer">
         <h4 class="footer__h4">
