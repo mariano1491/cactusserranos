@@ -3,10 +3,47 @@
 @import "./parciales/header";
 @import "./parciales/main";
 @import "./parciales/body";
+@import "./parciales/media";
 
 
 
+.cajaCarrito {
+    
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    text-align: center;
 
+    &__h2 {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    &__fieldset {
+        border: 1px solid black;
+        background-image: url("https://img.wallpaper.sc/android/images/1080x1920/android-1080x1920-wallpaper_03886.jpg");
+        overflow: hidden;
+        background-repeat: no-repeat;
+        font-size: 1.2rem;
+
+    }
+    &__legend {
+        font-weight: bold;
+
+    }
+    &__legend2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__p {
+        font-weight: bold;
+        box-shadow: rgb(10, 63, 63);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+}
 
 
 li a:hover {
@@ -69,7 +106,6 @@ p {
     line-height: 1.2;
     word-spacing: 5px;
     margin: 1rem;
-    padding: 1rem;
 }
 
 /*grid*/
@@ -340,14 +376,16 @@ fieldset {
     font-weight: bold;
     justify-content: center;
     display: flex;
+    text-align: center;
     
     
 
 
     &__fieldset {
-        background-image: url("../imagen/cactusformulario.jpg");
+        background-image: url("https://img.wallpaper.sc/android/images/1080x1920/android-1080x1920-wallpaper_03886.jpg");
+        overflow: hidden;
         background-repeat: no-repeat;
-        background-size: cover;
+        
         text-align: center;
         border: 1px solid black;
     }
@@ -460,59 +498,3 @@ fieldset {
 
 }
 
-@media only screen and (max-width: 767px) {
-
-    .divCajas {
-        flex-direction: column;
-    }
-
-    .h1Index {
-        font-size: 2rem;
-    }
-    .caja2Index__p {
-        font-size: 0rem;
-    }
-
-    .linksDeCabecera {
-        text-align: center;
-    }
-
-    .h2Index {
-        font-size: 1.5rem;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    .parrafoIndex {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 50% 50%;
-    }
-}
-
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-    .parrafoIndex {
-        font-size: 1.5rem;
-    }
-
-    ul li a {
-        font-size: 1.5rem;
-    }
-
-    .h2Index {
-        font-size: 2rem;
-    }
-
-    .parrafoPrincipal {
-        font-size: 1.5rem;
-    }
-
-    span {
-        font-size: 1.5rem;
-    }
-
-    footer {
-        font-size: 2rem;
-    }
-}
