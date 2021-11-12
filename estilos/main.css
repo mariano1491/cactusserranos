@@ -44,9 +44,7 @@ body {
   .divCajas {
     flex-direction: column; }
   .h1Index {
-    font-size: 2rem; }
-  .caja2Index__p {
-    font-size: 0rem; }
+    font-size: 1.5rem; }
   .linksDeCabecera {
     text-align: center; }
   .h2Index {
@@ -141,13 +139,21 @@ a {
     .h1Index {
       font-size: 3rem; } }
 
-.h1Secciones {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #0f88a7;
-  text-shadow: #076814 0.1em 0.1em 0.2em;
-  padding: 1rem; }
+.borderTopSeccion {
+  border-top: 1px solid black;
+  display: block; }
+  .borderTopSeccion__img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center; }
+  .borderTopSeccion__h1secciones {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0f88a7;
+    text-shadow: #076814 0.1em 0.1em 0.2em;
+    padding: 1rem; }
 
 h5 {
   font-weight: bold; }
@@ -195,10 +201,10 @@ p {
   font-weight: bold;
   font-size: 1.5rem; }
   .caja2Index__p {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .caja2Index__p {
-      font-size: calc( 2rem +  num(1rem)-num(2rem) *  (100vw - 768px) /  num(1024px)-num(768px)); } }
+      font-size: calc( 1.5rem +  num(1rem)-num(1.5rem) *  (100vw - 768px) /  num(1024px)-num(768px)); } }
   @media (min-width: 1024px) {
     .caja2Index__p {
       font-size: 1rem; } }
@@ -436,3 +442,51 @@ fieldset {
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3); }
   .margenImg__botonCarrito :hover {
     background-color: black; }
+
+.page-link {
+  font-weight: bold;
+  color: black;
+  background: #2d4f34;
+  background: radial-gradient(circle, #2d4f34 0%, #4b8b72 0%, #496f4e 97%);
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.page-link:hover {
+  color: #193b19; }
+
+@media only screen and (max-width: 767px) {
+  .divCajas {
+    flex-direction: column; }
+  .h1Index {
+    font-size: 1.5rem; }
+  .linksDeCabecera {
+    text-align: center; }
+  .h2Index {
+    font-size: 1.5rem; }
+  .navegacion {
+    background: -webkit-radial-gradient(circle, #0c7462 0%, #0d8b0b 35%, rgba(0, 255, 68, 0.599877) 100%);
+    border: 1px solid black; }
+  li a {
+    color: #030303;
+    font-size: 1.2rem;
+    font-weight: bold; } }
+
+@media only screen and (min-width: 768px) {
+  .parrafoIndex {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%; } }
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .parrafoIndex {
+    font-size: 1.5rem; }
+  ul li a {
+    font-size: 1.5rem; }
+  .h2Index {
+    font-size: 2rem; }
+  .parrafoPrincipal {
+    font-size: 1.5rem; }
+  span {
+    font-size: 1.5rem; }
+  footer {
+    font-size: 2rem; } }

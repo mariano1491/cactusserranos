@@ -86,14 +86,29 @@ a {
     @include font-size(2rem, 3rem)
 }
 
-.h1Secciones {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $verdeAgua;
-    text-shadow: rgb(7, 104, 20) 0.1em 0.1em 0.2em;
-    padding: 1rem;
+.borderTopSeccion {
+
+    border-top: 1px solid black;
+    display: block;
+    
+    &__img {
+        height:100px;
+        width:100px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__h1secciones {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $verdeAgua;
+        text-shadow: rgb(7, 104, 20) 0.1em 0.1em 0.2em;
+        padding: 1rem;
+    }
 }
+
 
 
 h5 {
@@ -160,7 +175,7 @@ p {
     font-size: 1.5rem;
 
     &__p {
-        @include font-size(2rem, 1rem)
+        @include font-size(1.5rem, 1rem)
     }
 
 
@@ -498,3 +513,15 @@ fieldset {
 
 }
 
+.page-link {
+    font-weight: bold;
+    color: black;
+    background: rgb(45,79,52);
+background: radial-gradient(circle, rgba(45,79,52,1) 0%, rgba(75,139,114,1) 0%, rgba(73,111,78,1) 97%);
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.page-link:hover {
+    color: rgb(25, 59, 25);
+}
