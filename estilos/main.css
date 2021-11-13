@@ -350,9 +350,14 @@ p {
     margin-bottom: 2rem;
     flex-wrap: wrap;
     flex-basis: 100%;
-    background: #46ae2d;
-    background: linear-gradient(0deg, #46ae2d 0%, #f0c05a 82%);
-    border-radius: 12rem; }
+    background: #77c87f;
+    background: -moz-linear-gradient(0deg, #77c87f 0%, #ffcb87 50%, #f2f4a7 100%);
+    background: -webkit-linear-gradient(0deg, #77c87f 0%, #ffcb87 50%, #f2f4a7 100%);
+    background: linear-gradient(0deg, #77c87f 0%, #ffcb87 50%, #f2f4a7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#77c87f",endColorstr="#f2f4a7",GradientType=1);
+    border-radius: 2rem;
+    border-top: 1px solid #ad9112;
+    border-bottom: 1px solid #03551b; }
   .divCajas .cajaIndex1__legend {
     border: 1px solid black; }
   .divCajas .cajaIndex1__h3 {

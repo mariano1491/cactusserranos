@@ -7,7 +7,7 @@
     .h1Index {
         font-size: 1.5rem;
     }
-    
+
     .linksDeCabecera {
         text-align: center;
     }
@@ -15,11 +15,13 @@
     .h2Index {
         font-size: 1.5rem;
     }
+
     .navegacion {
         background: -webkit-radial-gradient(circle, #0c7462 0%, #0d8b0b 35%, rgba(0, 255, 68, 0.599877) 100%);
         border: 1px solid black;
-        
+
     }
+
     li a {
         color: #030303;
         font-size: 1.2rem;
@@ -62,9 +64,7 @@
     footer {
         font-size: 2rem;
     }
-    
-}
-@media only screen and (max-width: 954px) {
 
-    
 }
+
+@media only screen and (max-width: 954px) {}
