@@ -4,46 +4,13 @@
 @import "./parciales/main";
 @import "./parciales/body";
 @import "./parciales/media";
+@import "./parciales/productos";
+@import "./parciales/footer";
+@import "./parciales/carrito";
 
 
 
-.cajaCarrito {
-    
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
-    text-align: center;
 
-    &__h2 {
-        font-weight: bold;
-        margin-top: 20px;
-    }
-
-    &__fieldset {
-        border: 1px solid black;
-        background-image: url("https://img.wallpaper.sc/android/images/1080x1920/android-1080x1920-wallpaper_03886.jpg");
-        overflow: hidden;
-        background-repeat: no-repeat;
-        font-size: 1.2rem;
-
-    }
-    &__legend {
-        font-weight: bold;
-
-    }
-    &__legend2 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    &__p {
-        font-weight: bold;
-        box-shadow: rgb(10, 63, 63);
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    
-}
 
 
 li a:hover {
@@ -90,10 +57,10 @@ a {
 
     border-top: 1px solid black;
     display: block;
-    
+
     &__img {
-        height:100px;
-        width:100px;
+        height: 100px;
+        width: 100px;
         display: flex;
         justify-content: center;
     }
@@ -123,11 +90,11 @@ p {
     margin: 1rem;
 }
 
-/*grid*/
+/*grid main*/
 
 .gridMain {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-columns: repeat(3, auto);
     grid-template-areas:
         "main1"
@@ -135,6 +102,7 @@ p {
         "main3"
         "main4"
         "main5"
+        "main6"
 
 }
 
@@ -158,11 +126,12 @@ p {
     grid-area: main5;
 }
 
-/*.main5 {
-    margin: auto;
-}*/
+.main6 {
+    grid-area: main6;
+}
 
-/*Caja*/
+
+/*Caja index main 2*/
 
 .caja2Index {
     align-items: center;
@@ -178,8 +147,6 @@ p {
         @include font-size(1.5rem, 1rem)
     }
 
-
-
     &__h2 {
         padding: 0.5rem;
         background: radial-gradient(circle, rgb(92, 48, 6) 0%, rgb(141, 117, 10) 35%, #4d4503 100%);
@@ -188,13 +155,12 @@ p {
         border: 2px solid black;
         display: inline-block;
         margin: 0 0.5rem;
-
         animation: bounce;
-        /* referring directly to the animation's @keyframe declaration */
         animation-duration: 2s;
-        /* don't forget to set a duration! */
     }
 }
+
+/*texto index main4 */
 
 .texto1Index {
     font-weight: bold;
@@ -213,6 +179,7 @@ p {
     }
 }
 
+
 .texto2Index {
     font-weight: bold;
 
@@ -230,12 +197,8 @@ p {
     }
 }
 
-/*cajas del index */
 
-
-
-
-
+/*cajas del index main5 */
 
 .divCajas {
     display: flex;
@@ -257,8 +220,9 @@ p {
             margin-bottom: 2rem;
             flex-wrap: wrap;
             flex-basis: 100%;
-            background: rgb(207, 214, 214);
-            background: linear-gradient(90deg, rgba(207, 214, 214, 1) 0%, rgba(196, 237, 159, 1) 35%, rgba(200, 218, 92, 1) 100%);
+            background: rgb(70, 174, 45);
+            background: linear-gradient(0deg, rgba(70, 174, 45, 1) 0%, rgba(240, 192, 90, 1) 82%);
+            border-radius: 12rem;
         }
 
         &__legend {
@@ -267,7 +231,7 @@ p {
         }
 
         &__h3 {
-            color: $verde;
+            color: black;
             margin: 1rem;
             padding: 1rem;
             text-decoration: underline;
@@ -275,24 +239,16 @@ p {
 
         &__p {
             font-size: 1rem;
+            color: black;
             @include font-size(1.5rem, 1.2rem)
         }
-
-
     }
 }
 
 
 /* imagenes */
-.imagenInicio {
-    width: 100%;
 
-}
 
-.imagen {
-    height: 250px;
-    width: 250px;
-}
 
 .alturaSlider {
     height: 60vh;
@@ -340,44 +296,7 @@ fieldset {
 
 
 
-.footer {
-    background: rgb(11, 18, 1);
-    background: -moz-linear-gradient(0deg, rgba(11, 18, 1, 1) 0%, rgba(38, 56, 7, 1) 50%, rgba(54, 91, 12, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(11, 18, 1, 1) 0%, rgba(38, 56, 7, 1) 50%, rgba(54, 91, 12, 1) 100%);
-    background: linear-gradient(0deg, rgba(11, 18, 1, 1) 0%, rgba(38, 56, 7, 1) 50%, rgba(54, 91, 12, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1201", endColorstr="#365b0c", GradientType=1);
-    padding: 1rem;
-    border-top: 1px solid black;
-    text-align: center;
 
-    &__h4 {
-        color: $blanco;
-        margin-bottom: 1rem;
-        text-align: center;
-        font-weight: bold;
-
-    }
-
-    &__a {
-        display: flex;
-        justify-content: center;
-        text-align: justify;
-        align-items: center;
-        color: $blanco;
-        margin-bottom: 1rem;
-        font-size: 1.4rem;
-
-    }
-
-    &__h5 {
-        color: $blanco;
-        font-size: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid white;
-
-    }
-
-}
 
 .relleno {
     height: 10vh;
@@ -386,21 +305,21 @@ fieldset {
 /*formulario*/
 
 .formulario {
-    
+
     line-height: 2rem;
     font-weight: bold;
     justify-content: center;
     display: flex;
     text-align: center;
-    
-    
+
+
 
 
     &__fieldset {
         background-image: url("https://img.wallpaper.sc/android/images/1080x1920/android-1080x1920-wallpaper_03886.jpg");
         overflow: hidden;
         background-repeat: no-repeat;
-        
+
         text-align: center;
         border: 1px solid black;
     }
@@ -415,7 +334,7 @@ fieldset {
     border-style: outset;
     border-color: rgb(96, 165, 17);
     border-image: initial;
-    
+
 }
 
 
@@ -426,102 +345,37 @@ fieldset {
     width: 69px;
     border-radius: 0.25rem;
     border-color: rgb(96, 165, 17);
-   height: 40px;
-   padding-bottom: 5px;
+    height: 40px;
+    padding-bottom: 5px;
 }
+
 .boton:hover {
     background-color: #0d6efd;
 }
 
-.margenImg {
-    padding-top: 1rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
 
-
-    &__fieldset {
-        background: rgb(207, 214, 214);
-        background: linear-gradient(90deg, rgba(207, 214, 214, 1) 0%, rgba(196, 237, 159, 1) 35%, rgba(200, 218, 92, 1) 100%);
-        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
-    }
-
-    &__legend {
-        text-align: center;
-        padding: 1rem;
-    }
-
-    &__h6 {
-        color: #406708;
-        font-weight: bold;
-        font-size: 1rem;
-        text-transform: uppercase;
-
-    }
-
-    &__img {
-        display: flex;
-        justify-content: space-between;
-        margin: 2px 10px;
-        object-fit: cover;
-        height: 250px;
-        width: 250px;
-        padding: 0.625rem;
-        transition: all 0.3s ease-out;
-    }
-
-    &__img:hover {
-        transform: scale(1.1);
-    }
-
-
-
-    &__h4 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 1rem;
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-
-    &__bottonCarrito {
-        background-color: rgba(96, 165, 17, 0.541);
-        border-radius: 1px;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1rem;
-        height: 3rem;
-        width: 50%;
-        margin-left: 4.4rem;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        margin-bottom: 1rem;
-        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
-        
-    
-
-    }
-    &__botonCarrito :hover {
-        background-color: black;
-    }
-
-
-
-
-
-}
 
 .page-link {
     font-weight: bold;
-    color: black;
-    background: rgb(45,79,52);
-background: radial-gradient(circle, rgba(45,79,52,1) 0%, rgba(75,139,114,1) 0%, rgba(73,111,78,1) 97%);
-margin-top: 20px;
-margin-bottom: 20px;
+    color: white;
+    background: rgb(45, 79, 52);
+    background: radial-gradient(circle, rgba(45, 79, 52, 1) 0%, rgba(75, 139, 114, 1) 0%, rgba(73, 111, 78, 1) 97%);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .page-link:hover {
     color: rgb(25, 59, 25);
+}
+
+.titulo-prod {
+    
+    flex-direction: row;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #0f88a7;
+    text-shadow: #076814 0.1em 0.1em 0.2em;
+    padding: 1rem;
 }

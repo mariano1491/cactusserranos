@@ -1,0 +1,37 @@
+.cajaCarrito {
+    
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+    &__h2 {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    &__fieldset {
+        border: 1px solid black;
+        background-image: url("https://img.wallpaper.sc/android/images/1080x1920/android-1080x1920-wallpaper_03886.jpg");
+        overflow: hidden;
+        background-repeat: no-repeat;
+        font-size: 1.2rem;
+
+    }
+    &__legend {
+        font-weight: bold;
+
+    }
+    &__legend2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__p {
+        font-weight: bold;
+        box-shadow: rgb(10, 63, 63);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+}
